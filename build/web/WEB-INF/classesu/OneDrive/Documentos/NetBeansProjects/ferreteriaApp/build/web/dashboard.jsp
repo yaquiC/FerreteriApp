@@ -114,7 +114,7 @@
                     <p class="text-sm text-gray-600">Registro de ventas y facturación</p>
                     <span class="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full self-end">₡2.4M este mes</span>
                 </div>
-                <div onclick="location.href='CLIENTE/clientepage.jsp'" class="bg-white p-4 rounded-lg shadow flex flex-col gap-1 cursor-pointer">
+                <div onclick="location.href='CLIENTE/clientesPage.jsp'" class="bg-white p-4 rounded-lg shadow flex flex-col gap-1 cursor-pointer">
                     <div class="flex items-center gap-2">
                         <div class="bg-purple-100 text-purple-600 p-2 rounded-full">
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
