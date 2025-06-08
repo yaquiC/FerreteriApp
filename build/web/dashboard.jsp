@@ -162,6 +162,30 @@
                     <p class="text-sm text-gray-600">Análisis de ventas, stock y más</p>
                     <span class="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full self-end">15 reportes</span>
                 </div>
+                <div onclick="location.href='CATEGORIAS/categoriesPage.jsp'" class="bg-white p-4 rounded-lg shadow flex flex-col gap-1 cursor-pointer">
+                    <div class="flex items-center gap-2">
+                        <div class="bg-pink-100 text-pink-600 p-2 rounded-full">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 10a4 4 0 100-8 4 4 0 000 8zM4 16a6 6 0 1112 0H4z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-bold">Categorias</h3>
+                    </div>
+                    <p class="text-sm text-gray-600">Gestión de empleados y usuarios</p>
+                    <span class="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full self-end">12 empleados</span>
+                </div>
+                <div onclick="location.href='TipoMedida/TipodeMedidaPage.jsp'" class="bg-white p-4 rounded-lg shadow flex flex-col gap-1 cursor-pointer">
+                    <div class="flex items-center gap-2">
+                        <div class="bg-cyan-100 text-cyan-600 p-2 rounded-full">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M5 3a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h1zm10 0a2 2 0 012 2v10a2 2 0 01-2 2h-1a2 2 0 01-2-2V5a2 2 0 012-2h1z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-bold">Tipo de Medida</h3>
+                    </div>
+                    <p class="text-sm text-gray-600">Gestión de unidades de medida de productos</p>
+                   
+                </div>
             </div>
         </main>
     </body>
