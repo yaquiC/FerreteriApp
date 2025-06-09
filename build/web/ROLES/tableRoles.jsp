@@ -1,4 +1,5 @@
 <div class="w-full h-full p-4">
+   <div class="table-responsive">
     <table class="table table-striped">
         <thead class="table-dark">
             <tr>
@@ -12,6 +13,7 @@
             <!-- Los datos se insertarán aquí -->
         </tbody>
     </table>
+   </div>
 </div>
 
 <!-- Funciones JS para eliminar y actualizar -->

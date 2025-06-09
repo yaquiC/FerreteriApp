@@ -18,6 +18,10 @@
         </tbody>
     </table>
 </div>
+<!-- Funciones JS para eliminar y actualizar -->
+<script src="JS/deleteCliente.js"></script>
+<script src="JS/updateCliente.js"></script>
+
 
 <script>
     // se ejecuta al entrar a la pagina
@@ -57,6 +61,29 @@
 
                         const statusCell = document.createElement('td');
                         statusCell.textContent = client.active ? 'Activo' : 'Inactivo';
+                        
+                        const actionsCell = document.createElement('td');
+
+                    // Botón Editar
+                    const editBtn = document.createElement('button');
+                    editBtn.textContent = 'Editar';
+                    editBtn.className = 'btn btn-success btn-sm me-2';
+                    editBtn.addEventListener('click', () => {
+                        editCient(client.id); // ? Correcto: pasa el ID del rol
+                    });
+
+                    // Botón Eliminar
+                    const deleteBtn = document.createElement('button');
+                    deleteBtn.textContent = 'Eliminar';
+                    deleteBtn.className = 'btn btn-danger btn-sm';
+                    deleteBtn.addEventListener('click', () => {
+                        if (confirm(`¿Estás seguro de eliminar el Cliente?`)) {
+                            deleteClient(client.id, row);
+                        }
+                    });
+
+                    actionsCell.appendChild(editBtn);
+                    actionsCell.appendChild(deleteBtn);
 
                         row.appendChild(idCell);
                         row.appendChild(nombreCell);
@@ -65,6 +92,7 @@
                         row.appendChild(telefonoCell);
                         row.appendChild(duiCell);
                         row.appendChild(statusCell);
+                        row.appendChild(actionsCell);
 
                         clientsBody.appendChild(row);
                     });

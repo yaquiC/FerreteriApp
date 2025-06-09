@@ -17,6 +17,9 @@
         </tbody>
     </table>
 </div>
+<!-- Funciones JS para eliminar y actualizar -->
+<script src="JS/deleteTipodeMedida.js"></script>
+<script src="JS/updateTipodeMedida.js"></script>
 
 <script>
     // se ejecuta al entrar a la pagina
@@ -44,10 +47,34 @@
 
                         const statusCell = document.createElement('td');
                         statusCell.textContent = typeOfMeasure.active ? 'Activo' : 'Inactivo';
+                        
+                         const actionsCell = document.createElement('td');
+
+                    // Botón Editar
+                    const editBtn = document.createElement('button');
+                    editBtn.textContent = 'Editar';
+                    editBtn.className = 'btn btn-success btn-sm me-2';
+                    editBtn.addEventListener('click', () => {
+                        editTypeOfMeasure(typeOfMeasure.id); // ? Correcto: pasa el ID del rol
+                    });
+
+                    // Botón Eliminar
+                    const deleteBtn = document.createElement('button');
+                    deleteBtn.textContent = 'Eliminar';
+                    deleteBtn.className = 'btn btn-danger btn-sm';
+                    deleteBtn.addEventListener('click', () => {
+                        if (confirm(`¿Estás seguro de eliminar el tipo de medida "${typeOfMeasure.name}"?`)) {
+                            deleteTipodeMedida(typeOfMeasure.id, row);
+                        }
+                    });
+
+                    actionsCell.appendChild(editBtn);
+                    actionsCell.appendChild(deleteBtn);
 
                         row.appendChild(idCell);
                         row.appendChild(nameCell);
                         row.appendChild(statusCell);
+                        row.appendChild(actionsCell);
 
                         typeOfMeasureBody.appendChild(row);
                     });
