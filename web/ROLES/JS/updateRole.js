@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             throw err;
                         });
                     }
-                    // Si la respuesta está vacía pero el status es OK (200-299)
+                    // Si la respuesta está vacía pero el status es OK 
                     if (response.status === 204 || response.headers.get('content-length') === '0') {
                         return null; // No intentamos parsear JSON
                     }

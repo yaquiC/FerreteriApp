@@ -24,7 +24,7 @@
             <nav class="flex flex-col gap-3">
                 <a href="index.jsp" class="hover:bg-blue-700 p-2 rounded">🏠 Inicio</a>
                 <a href="PRODUCTOS/ProductoPage.jsp" class="hover:bg-blue-700 p-2 rounded">📦 Inventario</a>
-                <a href="Ventas/ventasPage.jsp" class="hover:bg-blue-700 p-2 rounded">💰 Ventas</a>
+                <a href="SALES/salesPage.jsp" class="hover:bg-blue-700 p-2 rounded">💰 Ventas</a>
                 <a href="CLIENTE/clientesPage.jsp" class="hover:bg-blue-700 p-2 rounded">🧑 Clientes</a>
                 <a href="ROLES/rolesPage.jsp" class="hover:bg-blue-700 p-2 rounded">🔑 Roles</a>
                 <a href="CATEGORIAS/categoriesPage.jsp" class="hover:bg-blue-700 p-2 rounded">📁 Categorías</a>

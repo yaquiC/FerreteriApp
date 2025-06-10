@@ -1,10 +1,9 @@
 <%-- 
-    Document   : rolesPage
-    Created on : 2 jun 2025, 21:53:28
+    Document   : salesPage
+    Created on : 10 jun 2025, 14:46:54
     Author     : MINEDUCYT
 --%>
 
-<%-- rolesPage.jsp --%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -15,27 +14,18 @@
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body>
-        <!-- Navbar con parametros -->
         <jsp:include page="../SHARED/navbar.jsp">
-            <jsp:param name="tituloPrincipal" value="Gestion de Roles"/>
-            <jsp:param name="subtitulo" value="Administracion de roles"/>
-            <jsp:param name="textoBoton" value="Agregar Rol"/>
+            <jsp:param name="tituloPrincipal" value="Gestion de Ventas"/>
+            <jsp:param name="subtitulo" value="Administracion de ventas"/>
         </jsp:include>
 
-        <!-- Modal para crear rol -->
         <div class="w-full items-start flex p-4">
-            <jsp:include page="createRole.jsp" />
+            <a href="createSales.jsp" class="btn btn-primary">
+                Crear venta
+            </a>
         </div>
-        
-        <!-- Tabla de roles -->
-        <div class="p-4">
-            <jsp:include page="tableRoles.jsp" />
-        </div>
-        
-        <jsp:include page="updateRole.jsp" />
 
 
-        <!-- Callate jaqueline -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
     </body>
 </html>
