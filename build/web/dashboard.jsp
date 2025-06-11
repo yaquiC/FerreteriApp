@@ -30,7 +30,6 @@
                 <a href="CATEGORIAS/categoriesPage.jsp" class="hover:bg-blue-700 p-2 rounded">📁 Categorías</a>
                 <a href="TIPODEPRODUCTO/typeOfProductPage.jsp" class="hover:bg-blue-700 p-2 rounded">🛍️ Tipo de Producto</a>
                 <a href="TipoMedida/TipodeMedidaPage.jsp" class="hover:bg-blue-700 p-2 rounded">📏 Tipo de Medida</a>
-                <a href="Reportes/reportesPage.jsp" class="hover:bg-blue-700 p-2 rounded">📊 Reportes</a>
                 <a href="EMPLEADOS/employeePage.jsp" class="hover:bg-blue-700 p-2 rounded">👷 Empleados</a>
                 <a href="CerrarSesion" class="hover:bg-blue-700 p-2 rounded">🚪Cerrar Sesion</a>
             </nav>

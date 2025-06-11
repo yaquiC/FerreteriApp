@@ -16,7 +16,7 @@
     <body>
         <!-- Navbar con parametros -->
         <jsp:include page="../SHARED/navbar.jsp">
-            <jsp:param name="tituloPrincipal" value="Tpo de medida"/>
+            <jsp:param name="tituloPrincipal" value="Tipo de medida"/>
             <jsp:param name="subtitulo" value="Administracion de Tipo de medida"/>
             <jsp:param name="textoBoton" value="Agregar Tipo de Medida"/>
         </jsp:include>

@@ -8,7 +8,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Crear Rol</h1>
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Crear Cliente</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -48,13 +48,16 @@
 <script>
     document.getElementById("clientForm").addEventListener("submit", function (e) {
         e.preventDefault(); // Evita que recargue la página
-
+        
+            //captura los datos qu el usuario envio 
         const name = document.getElementById("clientName").value;
         const apellido = document.getElementById("clientLastname").value;
         const direccion = document.getElementById("clientAddress").value;
         const telefono = document.getElementById("clientPhone").value;
         const dui = document.getElementById("clientDui").value;
-
+        
+        
+        //Se hace una petición HTTP POST a la URL del backend (/api/v1/client).
         fetch("http://localhost:8081/api/v1/client", {
             method: "POST",
             headers: {
@@ -67,7 +70,7 @@
                                  dui: dui})
            
         })
-                .then(response => {
+                .then(response => { //Si la respuesta del servidor fue exitosa (response.ok):
                     if (response.ok) {
                         alert("Cliente creado exitosamente.");
                         document.getElementById("clientForm").reset();
@@ -80,7 +83,7 @@
                         });
                     }
                 })
-                .catch(error => {
+                .catch(error => { //Si ocurre cualquier error (fallo de red o del backend), lo muestra en consola y alerta al usuario.
                     console.error("Error:", error);
                     alert("Ocurrió un error: " + error.message);
                 });

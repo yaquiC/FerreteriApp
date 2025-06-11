@@ -34,7 +34,7 @@
                     return response.json();
                 })
                 .then(data => {
-                    const clients = data.clients;
+                    const clients = data.clients; //Se espera que la respuesta tenga un objeto clients, que es una lista de clientes.
                     const clientsBody = document.getElementById('clientsBody');
                     
                     // se insertan datos a la tabla

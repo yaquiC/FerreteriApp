@@ -5,16 +5,19 @@ let currentEditingClientId = null;
 function editCient(id) {
     currentEditingClientId = id; // Guardamos el ID en la variable global
 
-    fetch(`http://localhost:8081/api/v1/client/${id}`)
-            .then(response => response.json())
+    fetch(`http://localhost:8081/api/v1/client/${id}`) //Llama a la API para obtener los datos del cliente con ese id.
+            .then(response => response.json())  
             .then(data => {
+                
+                //Llena el formulario del modal con los datos del cliente para que el usuario los pueda editar.
                 const client = data.client;
                 document.getElementById('updateClientName').value = client.nombre;
                 document.getElementById('updateClientLastName').value = client.apellido;
                 document.getElementById('updateClientAddress').value = client.direccion;
                 document.getElementById('updateClientPhone').value = client.telefono;
                 document.getElementById('updateClientDui').value = client.dui;
-
+                
+                //Abre el modal de edición llamado updateClientModal
                 const modal = new bootstrap.Modal(document.getElementById('updateClientModal'));
                 modal.show();
             })
