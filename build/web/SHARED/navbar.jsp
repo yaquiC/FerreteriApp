@@ -22,9 +22,7 @@
         </div>
     </div>
 
-    <button class="flex items-center bg-red-500 hover:bg-red-700 text-white text-sm font-medium px-4 py-2 rounded-md shadow">
-        <span>Cerrar cesion</span>
-    </button>
+    
 
 </div>
 

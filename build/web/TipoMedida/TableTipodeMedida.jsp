@@ -63,8 +63,8 @@
                     deleteBtn.textContent = 'Eliminar';
                     deleteBtn.className = 'btn btn-danger btn-sm';
                     deleteBtn.addEventListener('click', () => {
-                        if (confirm(`¿Estás seguro de eliminar el tipo de medida "${typeOfMeasure.name}"?`)) {
-                            deleteTipodeMedida(typeOfMeasure.id, row);
+                        if (confirm(`¿Estás seguro de eliminar el Tipo de medida`)) {
+                            deleteTypeOfMeasure(typeOfMeasure.id, row);
                         }
                     });
 

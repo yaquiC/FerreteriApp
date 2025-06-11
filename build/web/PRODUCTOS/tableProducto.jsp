@@ -41,7 +41,7 @@
                     
                     // se insertan datos a la tabla
                     product.forEach((products, index) => {
-                         console.log(products);
+                        // console.log(products);
                         const row = document.createElement('tr');
 
                         const idCell = document.createElement('td');

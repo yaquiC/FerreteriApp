@@ -1,11 +1,13 @@
 /* 
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/JavaScript.js to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/javascript.js to edit this template
  */
 
 
-function deleteTipodeMedida(id, rowElement) {
-    fetch(`http://localhost:8081/api/v1/roles/${id}`, {
+// deleteRole.js
+
+function deleteTypeOfMeasure(id, rowElement) {
+    fetch(`http://localhost:8081/api/v1/typeofmeasure/${id}`, {
         method: 'DELETE'
     })
             .then(response => {
@@ -17,6 +19,6 @@ function deleteTipodeMedida(id, rowElement) {
             })
             .catch(error => {
                 console.error("Error al eliminar:", error);
-                alert("Error al eliminar el tipo de medida: " + error.message);
+                alert("Error al eliminar el Tipo de medida: " + error.message);
             });
 }

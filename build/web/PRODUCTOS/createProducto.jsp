@@ -16,39 +16,46 @@
             <div class="modal-body">
                 <form id="productForm">
                     <div class="modal-body">
-                        <div class="mb-3">
+                      <div class="row">
+                        <div class="col-md-6 mb-3">
                             <label for="productName" class="form-label">Nombre del Producto</label>
                             <input type="text" class="form-control" id="productName" name="productName" required>
                         </div>
-                        <div class="mb-3">
+                        <div class="col-md-6 mb-3">
                             <label for="productCode" class="form-label">Codigo del Producto</label>
                             <input type="text" class="form-control" id="productCode" name="productCode" required>
                         </div>
-                        <div class="mb-3">
+                      </div>
+                       <div class="row">
+                        <div class="col-md-6 mb-3">
                             <label for="productPrice" class="form-label">Precio del Producto</label>
                             <input type="text" class="form-control" id="productPrice" name="productPrice" required>
                         </div>
-                        <div class="mb-3">
+                        <div class="col-md-6 mb-3">
                             <label for="productdescription" class="form-label">Descripcion del Producto</label>
                             <input type="text" class="form-control" id="productdescription" name="productdescription" required>
                         </div>
-                        <div class="mb-3">
+                       </div>
+                      <div class="row">
+                        <div class="col-md-6 mb-3">
                             <label for="productStock" class="form-label">Stock </label>
                             <input type="text" class="form-control" id="productStock" name="productStock" required>
                         </div>
-                        <div class="mb-3">
+                        <div class="col-md-6 mb-3">
                             <label for="typeOfMeasureId" class="form-label">Tipo de medida </label>
                             <input type="text" class="form-control" id="typeOfMeasureId" name="typeOfMeasureId" required>
                         </div>
-                        <div class="mb-3">
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6 mb-3">
                             <label for="productCategoria" class="form-label">Categoria </label>
                             <input type="text" class="form-control" id="productCategoria" name="productCategoria" required>
                         </div>
-
-                       <div class="mb-3">
+                       <div class="col-md-6 mb-3">
                             <label for="typeOfProductId" class="form-label">Tipo de Producto </label>
                             <input type="text" class="form-control" id="typeOfProductId" name="typeOfProductId" required>
                         </div>
+                      </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>

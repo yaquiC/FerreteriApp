@@ -22,15 +22,17 @@
         <aside id="sidebar" class="w-64 bg-blue-900 text-white p-6 hidden md:block">
             <h2 class="text-lg font-bold mb-4">Ferretería El Martillo</h2>
             <nav class="flex flex-col gap-3">
-                <a href="index.jsp" class="hover:bg-blue-700 p-2 rounded">🏠 Inicio</a>
+               
                 <a href="PRODUCTOS/ProductoPage.jsp" class="hover:bg-blue-700 p-2 rounded">📦 Inventario</a>
                 <a href="SALES/salesPage.jsp" class="hover:bg-blue-700 p-2 rounded">💰 Ventas</a>
                 <a href="CLIENTE/clientesPage.jsp" class="hover:bg-blue-700 p-2 rounded">🧑 Clientes</a>
                 <a href="ROLES/rolesPage.jsp" class="hover:bg-blue-700 p-2 rounded">🔑 Roles</a>
                 <a href="CATEGORIAS/categoriesPage.jsp" class="hover:bg-blue-700 p-2 rounded">📁 Categorías</a>
+                <a href="TIPODEPRODUCTO/typeOfProductPage.jsp" class="hover:bg-blue-700 p-2 rounded">🛍️ Tipo de Producto</a>
                 <a href="TipoMedida/TipodeMedidaPage.jsp" class="hover:bg-blue-700 p-2 rounded">📏 Tipo de Medida</a>
                 <a href="Reportes/reportesPage.jsp" class="hover:bg-blue-700 p-2 rounded">📊 Reportes</a>
                 <a href="EMPLEADOS/employeePage.jsp" class="hover:bg-blue-700 p-2 rounded">👷 Empleados</a>
+                <a href="CerrarSesion" class="hover:bg-blue-700 p-2 rounded">🚪Cerrar Sesion</a>
             </nav>
         </aside>
 
@@ -63,14 +65,14 @@
                 <div onclick="location.href='ROLES/rolesPage.jsp'" class="bg-white p-6 rounded-lg shadow flex justify-between items-center hover:scale-105 transition cursor-pointer">
                     <div>
                         <p class="text-sm text-gray-500">Roles</p>
-                        <h3 class="text-xl font-bold">45 proveedores</h3>
+                        <h3 class="text-xl font-bold">45</h3>
                     </div>
                     <div class="bg-cyan-200 text-cyan-600 p-3 rounded-full">🔑</div>
                 </div>
                 <div onclick="location.href='CATEGORIAS/categoriesPage.jsp'" class="bg-white p-6 rounded-lg shadow flex justify-between items-center hover:scale-105 transition cursor-pointer">
                     <div>
                         <p class="text-sm text-gray-500">Categorías</p>
-                        <h3 class="text-xl font-bold">12 empleados</h3>
+                        <h3 class="text-xl font-bold">12</h3>
                     </div>
                     <div class="bg-pink-200 text-pink-600 p-3 rounded-full">📁</div>
                 </div>

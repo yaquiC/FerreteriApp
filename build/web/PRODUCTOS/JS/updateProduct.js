@@ -8,15 +8,16 @@ function editProduct(id) {
     fetch(`http://localhost:8081/api/v1/products/${id}`)
             .then(response => response.json())
             .then(data => {
-                const product = data;
-                document.getElementById('updateProducteName').value = product.name;
+                const product = data.products;
+                document.getElementById('updateProductName').value = product.name;
                 document.getElementById('updateProductCode').value = product.code;
                 document.getElementById('updateProductPrice').value = product.price;
                 document.getElementById('updateProductDescription').value = product.description;
                 document.getElementById('updateProductStock').value = product.stock;
-                document.getElementById('updateTypeOfMeasure').value = product.typeOfMeasureId;
-                document.getElementById('updateProductCategories').value = product.categoriesId;
-                document.getElementById('updateTypeOfProduct').value = product.typeOfProductsId;
+                document.getElementById('updateTypeOfMeasure').value = product.typeOfMeasure?.id;
+                document.getElementById('updateProductCategories').value = product.categories?.id;
+                document.getElementById('updateTypeOfProduct').value = product.typeOfProduct?.id;
+
 
                 const modal = new bootstrap.Modal(document.getElementById('updateProductModal'));
                 modal.show();
@@ -38,27 +39,29 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
 
-        const name = document.getElementById('updateProducteName').value;
+        const name = document.getElementById('updateProductName').value;
         const code = document.getElementById('updateProductCode').value;
         const price = document.getElementById('updateProductPrice').value;
         const description = document.getElementById('updateProductDescription').value;
         const stock = document.getElementById('updateProductStock').value;
         const typeOfMeasureId = document.getElementById('updateTypeOfMeasure').value;
         const categoriesId = document.getElementById('updateProductCategories').value;
-        const typeOfProductsId = document.getElementById('updateTypeOfProduct').value;
-        
+        const typeOfProductId = document.getElementById('updateTypeOfProduct').value;
+
         fetch(`http://localhost:8081/api/v1/products/${currentEditingProductId}`, {
             method: 'PUT',
             headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify({name: name,
-                code: code,
-                price: price,
-                description: description,
-                stock: stock,
+            body: JSON.stringify({
+                name:name,
+                code:code,
+                price:price,
+                description:description,
+                stock:stock,
                 typeOfMeasureId:typeOfMeasureId,
                 categoriesId:categoriesId,
-                typeOfProductId:typeOfProductId})
-        })
+                typeOfProductId:typeOfProductId })
+     })
+
                 .then(response => {
                     if (!response.ok) {
                         return response.json().then(err => {
