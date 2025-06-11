@@ -112,6 +112,8 @@ async function enviarVenta() {
 
     const resultado = await res.json();
     alert(resultado.message || "Venta enviada correctamente");
+    window.location.href = "/ferreteriaApp/SALES/salesPage.jsp";
+
 
     // Reset
     carrito = [];

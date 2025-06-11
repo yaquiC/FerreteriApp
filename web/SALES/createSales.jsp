@@ -15,7 +15,7 @@
     </head>
     <body>
 
-        <jsp:include page="../SHARED/navbar.jsp">
+        <jsp:include page="../SHARED/navbarSales.jsp">
             <jsp:param name="tituloPrincipal" value="Crear Ventas"/>
             <jsp:param name="subtitulo" value="Administracion de ventas"/>
         </jsp:include>
